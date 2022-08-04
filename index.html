@@ -18,7 +18,10 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo"><span>C</span>ovid</a>
-            <ul>
+            
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <ul id="navbar-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#appointement">Appointement</a></li>
@@ -49,6 +52,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- start section spread -->
     <section class="spread" id="spread">
@@ -75,6 +79,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- start section symptome -->
     <section class="symptome">
@@ -111,6 +116,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- start section step -->
     <section class="steps" id="steps">
@@ -141,6 +147,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- start section contact  -->
     <section class="avoid" id="avoid">
@@ -158,6 +165,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- start section protect  -->
     <section class="protect" id="protect">
@@ -197,8 +205,9 @@
             </div>
         </div>
     </section>
+    
 
-    <!-- start section world  -->
+    <!-- start section world   -->
     <section class="world" id="world">
         <h2>2 Lacs Corfirmed Cases of COVID-19 <br>Through The World</h2>
         <div class="row">
@@ -226,13 +235,14 @@
             </div>
         </div>
     </section>
+   
 
     <!-- start section test COVID-19  -->
     <section class="test" id="test">
         <div class="block">
             <div class="block-test">
                 <ul>
-                    <li>
+                    <li class="mb-3">
                         <h1>Need to Test COVID-19 ?</h1>
                         <p class="sub-title">just make an appointement then we'll come to you to collect your sample.</p>
                     </li>
@@ -241,7 +251,7 @@
             </div>
             <div class="block-nav">
                 <a href="#" class="logo"><span>C</span>ovid</a>
-                <ul>
+                <ul class="mb-2">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Appointement</a></li>
@@ -254,15 +264,26 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
+    
 
     <footer class="footer">
         <p>Pathé-PK<i class="fa-regular fa-copyright"></i> Copyright 2022 Covid. All right reserved</p>
     </footer>
 
     <!-- lien de la feuille d'interaction javascript -->
-    <script src="/assets/js/script.js"></script>
+   <!-- ********** JavaScript for the menu ******* -->
+   <script>
+    var navbar = document.getElementById("navbar-links");
+    function hideMenu(){
+        navbar.style.top = "-500px";
+    }
+
+    function showMenu(){
+        navbar.style.top = "0";
+    }
+</script>
 </body>
 </html>

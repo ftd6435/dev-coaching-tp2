@@ -155,9 +155,8 @@ i{
 
 /* start section home styling */
 .home{
-    height: 80vh;
     margin-top: 80px;
-    /* padding: 4rem 0; */
+    margin-bottom: 5rem;
 }
 
 .home .left{
@@ -494,4 +493,118 @@ i{
 .footer p{
     font-size: 1.2rem;
     padding: 2rem 0;
+}
+
+
+/* ********************************************************** */
+
+.fa-bars, .fa-xmark{
+    display: none;
+}
+
+/* start responsive design  */
+@media(max-width: 768px){
+    .fa-bars, .fa-xmark{
+        display: block;
+    }
+
+    .header .navbar .fa-bars{
+        color: #00184c;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar .logo{
+        font-size: 3.5rem;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -500px;
+        left: 0;
+        width: 100%;
+        background: rgba(242, 67, 56, 0.9);
+        height: 70vh;
+        transition: all 0.5s ease;
+        z-index: 9999;
+    }
+
+    .navbar ul i{
+        position: absolute;
+        top: 3rem;
+        right: 6.5rem;
+        cursor: pointer;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .navbar li a{
+        color: #fff;
+        margin: 1rem 0;
+    }
+
+    .navbar li a::after{
+        background: #fff;
+    }
+
+    /* home responsive design */
+    .row {
+        flex-direction: column;
+    }
+
+    .home .left{
+        margin: 2rem 0;
+    }
+
+    .home .left h1{
+        font-size: 3.8rem;
+    }
+
+    .symptome {
+        padding: 10rem 0 3rem 0;
+    }
+
+    .symptome .left{
+        margin-bottom: 3rem;
+    }
+
+    .protect .row, .world .row{
+        width: 95%;
+        margin: auto;
+    }
+
+    .steps .right, .avoid .right, .world .right {
+        margin-top: 3rem;
+    }
+
+    .block-test ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block-nav .logo{
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .block-nav ul li{
+        margin: 0.8rem 0.5rem;
+    }
 }
